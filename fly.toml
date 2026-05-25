@@ -1,7 +1,7 @@
 # fly.toml — FedEx Transit (WordPress)
 # https://fly.io/docs/reference/configuration/
 
-app = 'fedex-transit'
+app = 'borinho102-fedex-transit'
 primary_region = 'ams'
 
 [build]
