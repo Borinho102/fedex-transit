@@ -2,12 +2,10 @@
 set -euo pipefail
 
 if [[ $# -lt 1 ]]; then
-  echo "Usage: $0 <dockerhub-username/fedex-wordpress[:tag]>"
-  echo "Example: $0 myuser/fedex-wordpress:1.0.0"
-  exit 1
+  IMAGE="borix102/fedex-transit:latest"
+else
+  IMAGE="$1"
 fi
-
-IMAGE="$1"
 TAG="${IMAGE##*:}"
 if [[ "$TAG" == "$IMAGE" ]]; then
   TAG="latest"

@@ -1,9 +1,10 @@
 # Pin WordPress version for reproducible builds
 FROM wordpress:6.8.1-php8.2-apache
 
-LABEL org.opencontainers.image.title="fedex-wordpress" \
-      org.opencontainers.image.description="FedEx WordPress site for production deployment" \
-      org.opencontainers.image.vendor="FedEx"
+LABEL org.opencontainers.image.title="fedex-transit" \
+      org.opencontainers.image.description="FedEx Transit WordPress site for production deployment" \
+      org.opencontainers.image.vendor="FedEx" \
+      org.opencontainers.image.source="https://hub.docker.com/r/borix102/fedex-transit"
 
 # Site content (themes, plugins, uploads)
 COPY --chown=www-data:www-data wp-content/ /var/www/html/wp-content/
