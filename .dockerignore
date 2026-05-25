@@ -1,0 +1,31 @@
+# Git & OS
+.git
+.gitignore
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile
+docker-compose*.yml
+.env
+.env.*
+
+# Archives & backups
+*.zip
+*.tar
+*.tar.gz
+*.sql
+*.bak
+
+# Logs & caches (regenerated at runtime)
+**/*.log
+wp-content/cache/
+wp-content/wflogs/
+wp-content/uploads/wc-logs/
+wp-content/debug.log
+wp-content/upgrade/
+
+# IDE
+.idea/
+.vscode/
+*.swp
